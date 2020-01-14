@@ -62,7 +62,7 @@
         <beer-form
           v-if="mode === SCREEN_MODE.EDIT || mode === SCREEN_MODE.CREATE"
           :beer.sync="currentBeer"
-          :mode="SCREEN_MODE.EDIT"
+          :mode="mode"
           @onUpdated="updated"
           @onCreated="created"
         />
