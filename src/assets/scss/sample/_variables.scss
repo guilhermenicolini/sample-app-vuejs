@@ -1,0 +1,126 @@
+@import 'colors';
+
+// typography
+$sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$serif: 'Roboto Slab', 'Times New Roman', serif !default;
+$font-size-base: 14px;
+$font-size-default: $font-size-base;
+$font-size-large: ceil(($font-size-base * 1.25)) !default;
+$font-size-small: ceil(($font-size-base * 0.85)) !default;
+
+// forms
+$form-font-size: $font-size-default !default;
+$form-color: $grey !default;
+$form-border-bottom: 1px solid $form-color !default;
+$form-helper-font-size: $font-size-small !default;
+$form-error-color: $red-300 !default;
+
+// Brand colors
+$brand-primary: $amber !default;
+$brand-primary-lighter: $amber-300 !default;
+$brand-primary-darker: $amber-700 !default;
+$brand-primary-accent: $white !default;
+$brand-primary-inverse: $amber-100 !default;
+
+$brand-success: $green !default;
+$brand-success-lighter: $green-300 !default;
+$brand-success-darker: $green-700 !default;
+$brand-success-accent: $white !default;
+$brand-success-inverse: $green-100 !default;
+
+$brand-danger: $red !default;
+$brand-danger-lighter: $red-300 !default;
+$brand-danger-darker: $red-700 !default;
+$brand-danger-accent: $white !default;
+$brand-danger-inverse: $red-100 !default;
+
+$brand-warning: $orange !default;
+$brand-warning-lighter: $orange-300 !default;
+$brand-warning-darker: $orange-700 !default;
+$brand-warning-accent: $white !default;
+$brand-warning-inverse: $orange-100 !default;
+
+$brand-info: $cyan !default;
+$brand-info-lighter: $cyan-300 !default;
+$brand-info-darker: $cyan-700 !default;
+$brand-info-accent: $white !default;
+$brand-info-inverse: $cyan-100 !default;
+
+$brand-rose: $pink !default;
+$brand-rose-lighter: $pink-300 !default;
+$brand-rose-darker: $pink-700 !default;
+$brand-rose-accent: $white !default;
+$brand-rose-inverse: $pink-100 !default;
+
+$brand-neutral: $grey !default;
+$brand-neutral-accent: $black !default;
+$brand-neutral-lighter: $grey-300 !default;
+$brand-neutral-darker: $grey-700 !default;
+
+// Labels
+$label-light: $white;
+$label-dark: $black;
+
+$label-size-base: 14px;
+$label-size-large: ceil(($label-size-base * 1.25)) !default;
+$label-size-small: ceil(($label-size-base * 0.85)) !default;
+
+// Background
+$background-color: $grey-300 !default;
+
+// Box
+$box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+$box-radius: 3px;
+$box-divider: $grey-200 !default;
+$box-label-light: $grey-500 !default;
+$box-background: $grey-100 !default;
+
+// Forms
+
+// Input
+@mixin form-input-border($color) {
+  border: 1px solid $color;
+}
+@mixin form-input-box-shadow($color) {
+  box-shadow: 0px 1px 1px 0px $color;
+}
+
+$form-border-neutral: $grey;
+$form-border-hover: $brand-primary;
+$form-border-error: $brand-danger;
+$form-error-color: $brand-danger;
+
+$form-label-color: $grey-700 !default;
+$form-border: 1px solid $grey-500 !default;
+$form-border-error: 1px solid $red-300 !default;
+
+$form-hover: $brand-primary;
+$form-active: $blue-400 !default;
+$form-button-disabled: $grey-500 !default;
+$form-button-disabled-accent: $grey-400 !default;
+$form-border-radius: 3px;
+
+// Header
+$header-font-size: $font-size-large !default;
+$header-line-height: ceil(($header-font-size * 2.2)) !default;
+$header-divider: 2px solid $grey-500 !default;
+$header-color: $black !default;
+
+// Avatar
+$avatar-border-color: $grey-700 !default;
+$avatar-background-color: $grey-400 !default;
+
+// Table
+$table-border-color: $grey-400 !default;
+$table-background-color-even: $grey-300 !default;
+
+// Rating
+$rating-disabled: $grey-400 !default;
+$rating-active: $brand-warning !default;
+
+// Modal
+$modal-background: $grey-100 !default;
+$modal-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5) !default;
+$modal-radius: 5px !default;
+$modal-title-size: $font-size-large !default;
+$modal-divider: $grey-200 !default;
